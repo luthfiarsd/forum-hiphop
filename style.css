@@ -1,22 +1,33 @@
-* {
-  padding: 0;
+html {
+  background-color: #3c2a21;
+}
+
+body {
+  background-color: #3c2a21;
+  color: #ffffff;
 }
 
 .navbar-brand-format {
   font-family: "Montserrat", sans-serif;
-  color: #d5cea3;
 }
 
 .navbar-brand-format:hover {
-  color: #ffffff;
+  color: #d5cea3;
 }
 
 .nav-link {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+}
+
+.nav-link-color {
+  font-size: large;
+  color: #ffffff;
+}
+
+.nav-link-color:hover {
   color: #d5cea3;
+  font-style: "Montserrat", sans-serif;
 }
 
 .nav-item {
@@ -29,7 +40,7 @@
 }
 
 .nav-item:hover {
-  color: #e5e5cb;
+  color: #d5cea3;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -47,4 +58,83 @@
 .header-format {
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #3c2a21;
+}
+
+.subforum {
+  margin-top: 30px;
+}
+
+.subforum-title {
+  background-color: #d5cea3;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin: 5px;
+}
+
+.subforum-row {
+  display: grid;
+  grid-template-columns: 5% 60% 15% 20%;
+}
+
+.subforum-column {
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #d5cea3;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subforum-icon i {
+  font-size: 50px;
+}
+
+.subforum-info{
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* PHONE SCREEN */
+@media screen and(max-width:460px) {
+}
+
+/* TABLET SCREEN */
+@media screen and(min-width:460px) and (max-width: 1024px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 10% 60% 10% 20%;
+  }
+
+  .subforum-icon i{
+    font-size: 35px;
+  }
 }
